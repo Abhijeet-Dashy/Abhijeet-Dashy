@@ -29,9 +29,5 @@
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abhijeet-Dashy&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
   <i>Open to internships, collaborations, and impactful projects</i>
 </p>
