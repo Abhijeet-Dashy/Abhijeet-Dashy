@@ -1,286 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijeet - Developer Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<div align="center">
 
-        body {
-            background: #000;
-            color: #fff;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            overflow-x: hidden;
-            padding: 60px 20px;
-            line-height: 1.6;
-        }
+# Hi, I'm Abhijeet Dash
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+### B.Tech (3rd Year) • Full-Stack Web Developer
 
-        /* Subtle dot matrix background */
-        .dot-matrix {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.08;
-            pointer-events: none;
-            background-image: radial-gradient(circle, #fff 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=Full-Stack+Web+Developer;React+%7C+Next.js+%7C+Node.js;PostgreSQL+%7C+MongoDB;Building+Real-World+Projects" alt="Typing SVG" />
 
-        /* Header Section */
-        .header {
-            position: relative;
-            z-index: 1;
-            margin-bottom: 60px;
-            opacity: 0;
-            animation: fadeIn 1s ease forwards;
-        }
+</div>
 
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            letter-spacing: -1px;
-            margin-bottom: 8px;
-        }
+<br>
 
-        .header h2 {
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #666;
-        }
+## 🧠 What I Do
 
-        /* Divider */
-        .divider {
-            width: 100%;
-            height: 1px;
-            background: #222;
-            margin: 50px 0;
-            position: relative;
-            overflow: hidden;
-        }
+<table>
+<tr>
+<td width="33%" valign="top">
 
-        .divider::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 40%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, #fff, transparent);
-            animation: slide 3s ease-in-out infinite;
-        }
+```
+○ Build scalable 
+  full-stack web 
+  applications
+```
 
-        @keyframes slide {
-            0%, 100% { left: -100%; }
-            50% { left: 100%; }
-        }
+</td>
+<td width="33%" valign="top">
 
-        /* Section Styling */
-        .section {
-            margin: 50px 0;
-            opacity: 0;
-            animation: fadeIn 1s ease forwards;
-            position: relative;
-            z-index: 1;
-        }
+```
+○ Focus on clean UI 
+  + strong backend 
+  logic
+```
 
-        .section:nth-child(3) { animation-delay: 0.2s; }
-        .section:nth-child(4) { animation-delay: 0.4s; }
-        .section:nth-child(5) { animation-delay: 0.6s; }
-        .section:nth-child(6) { animation-delay: 0.8s; }
+</td>
+<td width="33%" valign="top">
 
-        .section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+```
+○ Prefer real 
+  projects over 
+  tutorials
+```
 
-        /* What I Do */
-        .cards {
-            display: grid;
-            gap: 15px;
-        }
+</td>
+</tr>
+</table>
 
-        .card {
-            border: 1px solid #222;
-            padding: 20px;
-            transition: border-color 0.3s ease;
-        }
+<br>
 
-        .card:hover {
-            border-color: #444;
-        }
+## 🛠 Tech Stack
 
-        .card::before {
-            content: '○';
-            margin-right: 12px;
-            color: #666;
-        }
+<div align="center">
 
-        /* Tech Stack */
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 12px;
-            margin-top: 20px;
-        }
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-        .tech-item {
-            border: 1px solid #222;
-            padding: 18px 10px;
-            text-align: center;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-        .tech-item:hover {
-            border-color: #fff;
-            transform: translateY(-2px);
-        }
+</div>
 
-        /* Current Focus */
-        .focus-list {
-            list-style: none;
-        }
+<br>
 
-        .focus-item {
-            padding: 15px 0;
-            border-bottom: 1px solid #111;
-            transition: padding-left 0.3s ease;
-        }
+## 🚀 Current Focus
 
-        .focus-item:last-child {
-            border-bottom: none;
-        }
+```yaml
+→ Full-stack project development
+→ Backend performance & system design  
+→ Preparing for internships & SDE roles
+```
 
-        .focus-item::before {
-            content: '→';
-            margin-right: 12px;
-            color: #666;
-            transition: margin-right 0.3s ease;
-        }
+<br>
 
-        .focus-item:hover {
-            padding-left: 10px;
-        }
+---
 
-        .focus-item:hover::before {
-            margin-right: 16px;
-        }
+<div align="center">
 
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-            padding: 30px;
-            border: 1px solid #222;
-            opacity: 0;
-            animation: fadeIn 1s ease 1s forwards;
-        }
+### *Open to internships, collaborations, and impactful projects*
 
-        .footer-text {
-            font-style: italic;
-            color: #666;
-        }
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,0,0,0,0&height=100&section=footer" />
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .tech-grid {
-                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Dot Matrix Background -->
-    <div class="dot-matrix"></div>
-
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>Hi, I'm Abhijeet 👋</h1>
-            <h2>B.Tech (3rd Year) • Full-Stack Web Developer</h2>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- What I Do -->
-        <div class="section">
-            <h3>🧠 What I Do</h3>
-            <div class="cards">
-                <div class="card">
-                    Build <strong>scalable full-stack web applications</strong>
-                </div>
-                <div class="card">
-                    Focus on <strong>clean UI + strong backend logic</strong>
-                </div>
-                <div class="card">
-                    Prefer <strong>real projects over tutorials</strong>
-                </div>
-            </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Tech Stack -->
-        <div class="section">
-            <h3>🛠 Tech Stack</h3>
-            <div class="tech-grid">
-                <div class="tech-item">React</div>
-                <div class="tech-item">Next.js</div>
-                <div class="tech-item">Tailwind</div>
-                <div class="tech-item">Node.js</div>
-                <div class="tech-item">Express</div>
-                <div class="tech-item">PostgreSQL</div>
-                <div class="tech-item">MongoDB</div>
-                <div class="tech-item">Git</div>
-            </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Current Focus -->
-        <div class="section">
-            <h3>🚀 Current Focus</h3>
-            <ul class="focus-list">
-                <li class="focus-item">Full-stack project development</li>
-                <li class="focus-item">Backend performance & system design</li>
-                <li class="focus-item">Preparing for internships & SDE roles</li>
-            </ul>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p class="footer-text">Open to internships, collaborations, and impactful projects</p>
-        </div>
-    </div>
-</body>
-</html>
+</div>
