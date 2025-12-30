@@ -1,7 +1,6 @@
 <div align="center">
 
 # Hi, I'm Abhijeet Dash
-
 ### B.Tech (3rd Year) • Full-Stack Web Developer
 
 <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=Full-Stack+Web+Developer;React+%7C+Next.js+%7C+Node.js;PostgreSQL+%7C+MongoDB;Building+Real-World+Projects" alt="Typing SVG" />
@@ -12,37 +11,27 @@
 
 ## 🧠 What I Do
 
+<div align="center">
 <table>
 <tr>
-<td width="33%" valign="top">
-
-```
-○ Build scalable 
-  full-stack web 
-  applications
-```
-
+<td width="33%" align="center">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/code.png" width="50"/>
+<br><br>
+<b>Build scalable<br>full-stack web<br>applications</b>
 </td>
-<td width="33%" valign="top">
-
-```
-○ Focus on clean UI 
-  + strong backend 
-  logic
-```
-
+<td width="33%" align="center">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/paint-palette.png" width="50"/>
+<br><br>
+<b>Focus on clean UI<br>+ strong backend<br>logic</b>
 </td>
-<td width="33%" valign="top">
-
-```
-○ Prefer real 
-  projects over 
-  tutorials
-```
-
+<td width="33%" align="center">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" width="50"/>
+<br><br>
+<b>Prefer real<br>projects over<br>tutorials</b>
 </td>
 </tr>
 </table>
+</div>
 
 <br>
 
@@ -65,7 +54,6 @@
 <br>
 
 ## 🚀 Current Focus
-
 ```yaml
 → Full-stack project development
 → Backend performance & system design  
