@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f0f0f,50:1a1a1a,100:000000&text=Abhijeet%20Dash&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20•%20B.Tech%20CSE%20(2027)&descAlignY=58" />
 
-# Hey there  
+
 ### Building scalable web apps with clean UI, strong backend systems, and real-world impact.
 
 <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=Full-Stack+Web+Developer;React+%7C+Next.js+%7C+Node.js;PostgreSQL+%7C+MongoDB;Building+Projects+That+Actually+Ship" />
@@ -37,19 +37,10 @@
 - Full-stack developer focused on **production-ready applications**
 - Building with **React, Next.js, Node.js, Express & PostgreSQL**
 - Strong interest in creating tools that improve developer productivity
-- Preparing for **SDE internships & software engineering roles**
-
+- 
 <br><br>
 
 ---
-# GitHub Stats
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Abhijeet-Dashy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Abhijeet-Dashy&theme=tokyonight&hide_border=true&background=00000000" />
-
 </div>
 
 # What I Do
