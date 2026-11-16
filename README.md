@@ -1,83 +1,28 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f0f0f,50:1a1a1a,100:000000&text=Abhijeet%20Dash&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20•%20B.Tech%20CSE%20(2027)&descAlignY=58" />
-
-
-## Building scalable web apps with clean UI, strong backend systems, and real-world impact.
-
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=Full-Stack+Web+Developer;React+%7C+Next.js+%7C+Node.js;PostgreSQL+%7C+MongoDB;Building+Projects+That+Actually+Ship" />
-
-<br>
-
-<a href="https://github.com/Abhijeet-Dashy">
-<img src="https://img.shields.io/github/followers/Abhijeet-Dashy?style=for-the-badge&color=181717&labelColor=000000&logo=github&label=Followers"/>
-</a>
-
-<a href="https://linkedin.com/in/abhijeet-dashy">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="mailto:dashabhijeet05@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<a href="https://abhijeet-dash.vercel.app">
-<img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
-
-</div>
-
----
-
-# About Me
-
-<img align="right" alt="coding" width="320" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
-
-- B.Tech CSE student graduating in **2027**
-- Full-stack developer focused on **production-ready applications**
-- Building with **React, Next.js, Node.js, Express & PostgreSQL**
-- Strong interest in creating tools that improve developer productivity
-
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img src="assets/hero-light.svg" alt="Abhijeet Dash. Full-Stack Developer. B.Tech CSE, 2027. A dithered portrait of Chrollo Lucilfer from Hunter x Hunter in a black suit, green headband and teal earrings." width="100%"></picture>
 <br><br>
-
----
-</div>
-
-# What I Do
-
-<div align="center">
-
-| Development | Frontend | Backend |
-|:---:|:---:|:---:|
-| Build scalable full-stack apps | Craft clean and responsive UIs | Design APIs & backend systems |
-| Real-world projects > tutorials | Performance-focused interfaces | Authentication, DB & architecture |
-| Write maintainable code | Smooth UX & accessibility | Optimization & scalability |
-
-</div>
-
----
-
-# Tech Stack
-
-<div align="center">
-
-### Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,html,css" />
-
-### Backend
-<img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,prisma,firebase" />
-
-### Tools & DevOps
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,vercel" />
-
-</div>
-
----
-
-<div align="center">
-
-### Always open to collaborations, internships, and impactful projects
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:000000,100:1f1f1f"/>
+<a href="https://abhijeet-dash.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg"><img src="assets/btn-portfolio-light.svg" alt="Portfolio: abhijeet-dash.vercel.app"></picture></a>&nbsp;<a href="https://github.com/Abhijeet-Dashy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg"><img src="assets/btn-github-light.svg" alt="GitHub: Abhijeet-Dashy"></picture></a>&nbsp;<a href="https://linkedin.com/in/abhijeet-dashy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img src="assets/btn-linkedin-light.svg" alt="LinkedIn: abhijeet-dashy"></picture></a>&nbsp;<a href="mailto:dashabhijeet05@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg"><img src="assets/btn-email-light.svg" alt="Email: dashabhijeet05@gmail.com"></picture></a>
+<br><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-about-dark.svg"><img src="assets/h-about-light.svg" alt="Who I am. Student by degree. Engineer by habit."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-1-dark.svg"><img src="assets/about-1-light.svg" alt="Education: B.Tech CSE. Computer Science, graduating in 2027."></picture>&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-2-dark.svg"><img src="assets/about-2-light.svg" alt="Role: Full-Stack Developer. Interfaces, APIs and data, end to end."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-3-dark.svg"><img src="assets/about-3-light.svg" alt="Focus: production-ready apps. Built to ship and hold up under real use."></picture>&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-4-dark.svg"><img src="assets/about-4-light.svg" alt="Interests: scalable systems, developer productivity and real-world problems."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-toolbox-dark.svg"><img src="assets/h-toolbox-light.svg" alt="What I build with. The stack behind the products."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-frontend-dark.svg"><img src="assets/toolbox-frontend-light.svg" alt="Frontend: React, Next.js, TypeScript, JavaScript, Tailwind CSS, HTML, CSS."></picture>&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-backend-dark.svg"><img src="assets/toolbox-backend-light.svg" alt="Backend: Node.js, Express, PostgreSQL, MongoDB, Prisma, Firebase."></picture>&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-tools-dark.svg"><img src="assets/toolbox-tools-light.svg" alt="Tools and DevOps: Git, GitHub, Docker, Linux, VS Code, Vercel."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg"><img src="assets/divider-light.svg" alt="" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-activity-dark.svg"><img src="assets/h-activity-light.svg" alt="Proof of work. Live from GitHub, refreshed daily."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/stats-a-dark.svg"><img src="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/stats-a-light.svg" alt="GitHub stats: contributions in the last year and current streak."></picture>&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/stats-b-dark.svg"><img src="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/stats-b-light.svg" alt="GitHub stats: longest streak and stars earned."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/graph-dark.svg"><img src="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/graph-light.svg" alt="Weekly contribution graph for the last year."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/langs-dark.svg"><img src="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/langs-light.svg" alt="Top languages across public repositories."></picture>
+<br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/snake-dark.svg"><img src="https://raw.githubusercontent.com/Abhijeet-Dashy/Abhijeet-Dashy/output/snake-light.svg" alt="Contribution graph being eaten by a snake" width="100%"></picture>
+<br><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg"><img src="assets/footer-light.svg" alt="Thanks for stopping by. Let's build something that ships." width="100%"></picture>
 
 </div>

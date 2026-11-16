@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 44" width="880" height="44" role="img" aria-label="Decorative divider with a small crimson spider">
+<title>Decorative divider with a small crimson spider</title>
+<defs><style>
+.d{font-family:'GDisplay',Geist,Inter,system-ui,sans-serif;font-weight:500;}
+.s{font-family:'GSans',Geist,Inter,system-ui,sans-serif;}
+.m{font-family:'GMono','Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;}
+.rise{animation:rise 720ms cubic-bezier(.22,1,.36,1) both;}
+@keyframes rise{0%{opacity:0;transform:translateY(14px);}}
+.word{animation:word 900ms cubic-bezier(.22,1,.36,1) both;}
+@keyframes word{0%{opacity:0;transform:translateY(.32em);filter:blur(10px);}}
+.fadein{animation:fadein 1400ms cubic-bezier(.22,1,.36,1) both;}
+@keyframes fadein{0%{opacity:0;}}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 1200ms cubic-bezier(.22,1,.36,1) both;}
+.growc{transform-box:fill-box;transform-origin:center;animation:grow 1400ms cubic-bezier(.22,1,.36,1) both;}
+@keyframes grow{0%{transform:scaleX(0);}}
+.draw{stroke-dasharray:1;animation:draw 2600ms cubic-bezier(.22,1,.36,1) both;}
+@keyframes draw{0%{stroke-dashoffset:1;}}
+.pulse{animation:pulse 4.2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.45;}50%{opacity:1;}}
+.float{animation:float 9s ease-in-out infinite;}
+@keyframes float{0%{opacity:0;transform:translateY(8px);}30%{opacity:.9;}100%{opacity:0;transform:translateY(-34px);}}
+.sway{transform-box:view-box;transform-origin:var(--ox) 0;animation:sway 7s ease-in-out infinite;}
+@keyframes sway{0%,100%{transform:rotate(-1.6deg);}50%{transform:rotate(1.6deg);}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;}}
+</style></defs>
+
+<defs>
+<linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e3e3e3" stop-opacity="0"/><stop offset="1" stop-color="#6d6b73" stop-opacity=".9"/></linearGradient>
+<linearGradient id="r" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d6b73" stop-opacity=".9"/><stop offset="1" stop-color="#e3e3e3" stop-opacity="0"/></linearGradient>
+</defs>
+<rect x="120" y="21.5" width="298" height="1" fill="url(#l)" class="grow" style="transform-origin:right"/>
+<rect x="462" y="21.5" width="298" height="1" fill="url(#r)" class="grow"/>
+<g class="rise"><path d="M437.6 12.6 L431.2 8.3 L425.7 15.8M437.6 15.5 L430.3 13.4 L424.9 20.9M437.6 18.5 L429.5 20.0 L424.0 27.5M437.6 21.4 L428.6 25.7 L423.2 33.2M442.4 12.6 L448.8 8.3 L454.3 15.8M442.4 15.5 L449.7 13.4 L455.1 20.9M442.4 18.5 L450.5 20.0 L456.0 27.5M442.4 21.4 L451.4 25.7 L456.8 33.2" fill="none" stroke="#b5172a" stroke-width="0.80" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="440" cy="21.9" rx="5.6" ry="7.1" fill="#b5172a"/><circle cx="440" cy="13.1" r="3.7" fill="#b5172a"/></g>
+
+</svg>
