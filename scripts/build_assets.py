@@ -31,12 +31,11 @@ def portrait_layers(name: str, ox: int, oy: int) -> str:
     P = PORTRAIT
     gw, gh, cell = P["w"], P["h"], P["cell"]
     gray = base64.b64decode(P["gray"])
-    cls = base64.b64decode(P["cls"])
     dark = name == "dark"
     # dots sit where the image is bright: light dots on the dark page, ink dots on the light page.
     tones = (["#4a4a4a", "#7a7a7a", "#b4b4b4", "#f2f2f2"] if dark else ["#c8c8c8", "#8c8c8c", "#4a4a4a", "#0b0b0b"])
-    green, teal = ("#7fbf5f", "#5fd3cf") if dark else ("#2f7d32", "#0f8f8a")
-    layers: dict[str, list] = {k: [] for k in (*tones, green, teal)}
+    teal = "#5fd3cf" if dark else "#0f8f8a"
+    layers: dict[str, list] = {k: [] for k in (*tones, teal)}
     for gy in range(gh):
         for gx in range(gw):
             i = gy * gw + gx
@@ -46,9 +45,6 @@ def portrait_layers(name: str, ox: int, oy: int) -> str:
             edge = smooth(0, 150, x) * (1 - .0 * smooth(300, 380, y))
             # same mapping in both themes: bright areas (face, shirt, tie) get the dots, the black suit and hair stay quiet
             d = max(0.0, min(1.0, (v - .12) / .88)) ** 1.1 * edge
-            if cls[i] == 1:
-                layers[green].append((x, y))
-                continue
             if d > (BAYER[gy % 4][gx % 4] + .5) / 16:
                 t = 3 if d > .62 else 2 if d > .38 else 1 if d > .18 else 0
                 layers[tones[t]].append((x, y))
@@ -60,7 +56,7 @@ def portrait_layers(name: str, ox: int, oy: int) -> str:
                 if (x + 1 - ex) ** 2 + (y + 1 - ey) ** 2 <= er * er:
                     layers[teal].append((x, y))
     # one dot per cell, so drop a cell from the tone layers when an accent covers it
-    taken = {c for k in (green, teal) for c in layers[k]}
+    taken = set(layers[teal])
     for k in tones:
         layers[k] = [c for c in layers[k] if c not in taken]
     out = []
@@ -72,8 +68,7 @@ def portrait_layers(name: str, ox: int, oy: int) -> str:
         for x, y in cells:
             parts.append(f"m{x - px} {y - py}h2v2h-2z")
             px, py = x, y
-        accent = col in (green, teal)
-        cls_ = "fadein pulse" if accent and col == teal else "fadein"
+        cls_ = "fadein pulse" if col == teal else "fadein"
         delay = .15 + n * .08
         out.append(f'<g class="{cls_}" style="animation-delay:{delay:.2f}s"><path fill="{col}" d="M{cells[0][0]} {cells[0][1]}h2v2h-2z'
                    + "".join(parts[1:]) + '"/></g>')
@@ -108,7 +103,7 @@ def hero(name: str) -> str:
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="17.5" fill="none" stroke="{t['border']}"/>
 """
     label = ("Abhijeet Dash. Full-Stack Developer. B.Tech CSE, 2027. Production-ready web apps and scalable systems. "
-             "A dithered portrait of Chrollo Lucilfer from Hunter x Hunter in a black suit, green headband and teal earrings.")
+             "A dithered portrait of Chrollo Lucilfer from Hunter x Hunter in a black suit and teal earrings.")
     return svg(W, H, label, body, defs)
 
 
@@ -201,7 +196,7 @@ TOOLBOX = [
     ("FRONTEND", [("React", "react"), ("Next.js", "nextdotjs"), ("TypeScript", "typescript"), ("JavaScript", "javascript"),
                   ("Tailwind CSS", "tailwindcss"), ("HTML", "html5"), ("CSS", "css3")]),
     ("BACKEND", [("Node.js", "nodedotjs"), ("Express", "express"), ("PostgreSQL", "postgresql"), ("MongoDB", "mongodb"),
-                 ("Prisma", "prisma"), ("Firebase", "firebase")]),
+                 ("Prisma", "prisma"), ("Firebase", "firebase"), ("FastAPI", "fastapi")]),
     ("TOOLS & DEVOPS", [("Git", "git"), ("GitHub", "github"), ("Docker", "docker"), ("Linux", "linux"),
                         ("VS Code", "visualstudiocode"), ("Vercel", "vercel")]),
 ]

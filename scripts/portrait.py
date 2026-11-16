@@ -3,7 +3,7 @@
     python scripts/portrait.py path/to/reference.png
 
 Writes scripts/portrait.json: a downsampled grayscale grid plus a colour-class
-grid (green headband, teal earrings). build_assets.py dithers that grid per theme.
+grid (teal earrings; the green headband in the source is painted out as forehead). build_assets.py dithers that grid per theme.
 The source image itself is not stored in the repo, only this coarse derived grid.
 """
 from __future__ import annotations
@@ -11,6 +11,7 @@ from __future__ import annotations
 import base64
 import colorsys
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -76,12 +77,37 @@ def main(src: str) -> None:
         return (sx - x0) * scale / CELL, sy * scale / CELL
     hb0 = to_cell(306, 58)
     hb1 = to_cell(390, 100)
-    cls = []
+    mask = [False] * (gw * gh)
     for i, (r, gr, b) in enumerate(zip(*[iter(small.tobytes())] * 3)):
         x, y = i % gw, i // gw
         hh, ss, vv = colorsys.rgb_to_hsv(r / 255, gr / 255, b / 255)
-        inbox = hb0[0] <= x <= hb1[0] and hb0[1] <= y <= hb1[1]
-        cls.append(1 if inbox and ss > 0.22 and vv > 0.22 and 65 <= hh * 360 <= 155 else 0)
+        if hb0[0] <= x <= hb1[0] and hb0[1] <= y <= hb1[1] and ss > 0.22 and vv > 0.22 and 65 <= hh * 360 <= 155:
+            mask[i] = True
+    # remove the headband: grow the mask a little, then repaint it as forehead (tone sampled just below the band)
+    grown = mask[:]
+    for i, m in enumerate(mask):
+        if m:
+            x, y = i % gw, i // gw
+            for dx in range(-2, 3):
+                for dy in range(-2, 3):
+                    if 0 <= x + dx < gw and 0 <= y + dy < gh:
+                        grown[(y + dy) * gw + x + dx] = True
+    ys = [i // gw for i, m in enumerate(mask) if m]
+    xs = [i % gw for i, m in enumerate(mask) if m]
+    below = sorted(g[(y) * gw + x] for y in range(max(ys) + 3, max(ys) + 6) for x in range(min(xs) + 6, max(xs) - 6)
+                   if not grown[y * gw + x])
+    skin = below[len(below) // 2]
+    # upper part becomes a ragged hair fringe, the rest forehead with a soft top-to-bottom light falloff
+    gys = [i // gw for i, m in enumerate(grown) if m]
+    y0g, y1g = min(gys), max(gys)
+    for i, m in enumerate(grown):
+        if not m:
+            continue
+        x, y = i % gw, i // gw
+        t = (y - y0g) / max(1, y1g - y0g)
+        fringe = 0.40 + 0.20 * math.sin(x * 1.9) + 0.08 * math.sin(x * 0.7 + 1)
+        g[i] = 14 if t < fringe else int(skin * (0.70 + 0.30 * t))
+    cls = [0] * (gw * gh)
     ears = []
     for sx, sy in EARRINGS:
         cx_, cy_ = to_cell(sx, sy)
@@ -92,7 +118,7 @@ def main(src: str) -> None:
         "cls": base64.b64encode(bytes(cls)).decode(),
         "ears": ears,
     }), encoding="utf-8")
-    print(f"{gw}x{gh} cells, {sum(1 for c in cls if c == 1)} headband cells, earrings {ears} -> {OUT.name}")
+    print(f"{gw}x{gh} cells, {sum(mask)} headband cells repainted (skin tone {skin}), earrings {ears} -> {OUT.name}")
 
 
 if __name__ == "__main__":
